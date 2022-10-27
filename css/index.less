@@ -1,0 +1,213 @@
+body {
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: #f2f4f7;
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  width: 100%;
+  color: #1c1c1c;
+  text-align: center;
+  height: 1.28rem;
+  line-height: 1.28rem;
+  font-size: 0.4667rem;
+  background-color: #fff;
+  border-bottom: 0.0133rem solid #eaeaea;
+}
+.wrap {
+  width: 100%;
+  background-color: #fff;
+  .nav {
+    padding: 0.6rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    a {
+      width: 100%;
+      flex: 33.3%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #707070;
+      font-size: 0.3333rem;
+      margin-bottom: 0.8267rem;
+      img {
+        width: 1.8533rem;
+        height: 1.8533rem;
+      }
+    }
+  }
+}
+.ad {
+  display: block;
+  padding: 0 0.12rem 0.5733rem 0.24rem;
+  img {
+    width: 100%;
+  }
+}
+// 就业指导2
+.instructor-work {
+  background-color: #fff;
+  margin-top: 0.1333rem;
+  margin-bottom: .1333rem;
+  padding: 0.5333rem 0.3067rem 0.5067rem 0.2933rem;
+  .job-title {
+    display: flex;
+    justify-content: space-between;
+    height: 0.5067rem;
+    line-height: 0.5067rem;
+    padding-bottom: 0.4533rem;
+    h2 {
+      font-size: 0.3733rem;
+      font-weight: bold;
+      &::before {
+        display: inline-block;
+        content: "";
+        width: 0.5067rem;
+        height: 0.5067rem;
+        background: url(../images/icon-01.png);
+        margin-right: 0.24rem;
+        vertical-align: bottom;
+      }
+    }
+    a {
+      font-size: 0.2933rem;
+      height: 0.2933rem;
+      color: #999;
+    }
+  }
+  .mySwiper {
+    position: relative;
+  }
+  .swiper {
+    width: 7.2rem;
+    height: 100%;
+  }
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.3333rem;
+    color: #333;
+    span {
+      padding-top: 0.32rem;
+    }
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transition: 300ms;
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  .swiper-slide-active,
+  .swiper-slide-duplicate-active {
+    transform: scale(1);
+    z-index: 99;
+    opacity: 1;
+  }
+  .img-list {
+    padding: 0;
+    margin: 0;
+    padding: 0 0.4133rem 0.52rem 0;
+    overflow-x: scroll;
+    margin-bottom: .9467rem;
+    ul {
+      list-style: none;
+      width: 120%;
+      display: flex;
+      .one {
+        flex: 1;
+        padding: 0.1333rem 0.1333rem 0.3333rem 0.1333rem;
+        margin: 0.1333rem;
+        box-shadow: 5px 4px 5px rgb(244, 234, 234);
+        border: 1px dashed rgb(242, 242, 242);
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 3.6267rem;
+          height: 2.28rem;
+        }
+        .up {
+          margin-top: 0.1333rem;
+          font-size: 0.3467rem;
+          line-height: 1.2;
+          letter-spacing: 0.0267rem;
+          padding-left: 0.0667rem;
+        }
+        .middle {
+          color: #ff4400;
+          font-size: 0.3467rem;
+          margin-top: 0.2667rem;
+        }
+        .down {
+          color: rgb(190, 189, 189);
+          margin-top: 0.2667rem;
+          font-size: 0.3467rem;
+        }
+      }
+    }
+  }
+}
+// 充电学习
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+// 底部固定栏
+//  19 50 20 45
+.icon-four {
+  border-top: 1px solid rgb(215, 214, 214);
+  box-sizing: border-box;
+  // padding: .2533rem .6667rem .2667rem .6rem;
+  width: 100%;
+  max-width: 750px;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  bottom: 0;
+  height: 1.5067rem;
+  background-color: #fff;
+  & > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    img {
+      width: 0.52rem;
+      height: 0.5467rem;
+      padding-bottom: 0.1467rem;
+    }
+    span {
+      font-size: 0.2933rem;
+      color: #666;
+    }
+    &:nth-child(1)>span {
+      background-image: linear-gradient(#52C4F0,#2CCAC7);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/flexible.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+      window.onload = function () {
+        var swiper = new Swiper(".swiper", {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          centeredSlides: true,
+          navigation:{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          loop: true,
+        });
+        
+      };
+    </script>
+  </head>
+
+  <body>
+    <h1>摹客</h1>
+    <div class="wrap">
+      <!-- icon图标 -->
+      <div class="nav">
+        <a href="#">
+          <img src="./images/组 22@2x.png" alt="" />
+          <span>HR面试</span>
+        </a>
+        <a href="#">
+          <img src="./images/笔@2x.png" alt="" />
+          <span>笔试</span>
+        </a>
+        <a href="#">
+          <img src="./images/组 24@2x.png" alt="" />
+          <span>技术面试</span>
+        </a>
+        <a href="#">
+          <img src="./images/组 26@2x.png" alt="" />
+          <span>模拟面试</span>
+        </a>
+        <a href="#">
+          <img src="./images/组 25@2x.png" alt="" />
+          <span>面试技巧</span>
+        </a>
+        <a href="#">
+          <img src="./images/组 23@2x.png" alt="" />
+          <span>薪资查询</span>
+        </a>
+      </div>
+      <!-- 广告图 -->
+      <a class="ad">
+        <img src="./images/组 21@2x.png" alt="" />
+      </a>
+    </div>
+    <!-- 就业指导 -->
+    <div class="instructor-work">
+      <div class="job-title">
+        <h2>就业指导</h2>
+        <a href="#">更多>></a>
+      </div>
+      <!-- 轮播图 -->
+      <div class="mySwiper">
+        <!-- Swiper -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/轮播.png" alt="" />
+              <span>老师教你应对面试技巧</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/轮播.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/轮播.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <!-- 充电学习 -->
+    <div class="instructor-work">
+      <div class="job-title">
+        <h2>充电学习</h2>
+        <a href="#">更多>></a>
+      </div>
+      <div class="img-list">
+        <ul>
+          <li class="one">
+            <img src="./images/study-01.jpg" alt="">
+            <span class="up">说地道英语，告别中式英语</span>
+            <span class="middle">156
+              <span class="down">人学习</span>
+            </span>
+          </li>
+          <li class="one">
+            <img src="./images/study-01.jpg" alt="">
+            <span class="up">说地道英语，告别中式英语</span>
+            <span class="middle">156
+              <span class="down">人学习</span>
+            </span>
+          </li>
+          <li class="one">
+            <img src="./images/study-01.jpg" alt="">
+            <span class="up">说地道英语，告别中式英语</span>
+            <span class="middle">156
+              <span class="down">人学习</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="icon-four">
+      <a href="#" class="item-01">
+        <img src="./images/item-01.png" alt="">
+        <span>首页</span>
+      </a>
+      <a href="#" class="item-02">
+        <img src="./images/item-02.png" alt="">
+        <span>技术面试</span>
+      </a>
+      <a href="#" class="item-03">
+        <img src="./images/item-03.png" alt="">
+        <span>模拟面试</span>
+      </a>
+      <a href="#" class="item-04">
+        <img src="./images/item-04.png" alt="">
+        <span>我的主页</span>
+      </a>
+    </div>
+  </body>
+</html>
